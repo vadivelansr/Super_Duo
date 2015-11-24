@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/frame"
+    android:padding="@dimen/widget_layout_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/widget_view_padding"
+        android:paddingLeft="@dimen/widget_view_padding"
+        android:paddingRight="@dimen/widget_view_padding"
+        android:paddingStart="@dimen/widget_view_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/home_crest"
+                android:layout_width="@dimen/widget_image_size"
+                android:layout_height="@dimen/widget_image_size"
+                android:layout_gravity="center"
+                android:contentDescription="@string/home_team"
+                android:gravity="center"
+                android:src="@drawable/ic_launcher" />
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/away_crest"
+                android:layout_width="@dimen/widget_image_size"
+                android:layout_height="@dimen/widget_image_size"
+                android:layout_gravity="center"
+                android:contentDescription="@string/away_team"
+                android:gravity="center"
+                android:src="@drawable/ic_launcher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/widget_margin_top"
+                android:contentDescription="@string/home_team"
+                android:gravity="center"
+                android:text="@string/test_text"
+                android:textColor="@color/widget_text_black"
+                android:textSize="@dimen/widget_text_size" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/away_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/widget_margin_top"
+                android:contentDescription="@string/away_team"
+                android:gravity="center"
+                android:text="@string/test_text"
+                android:textColor="@color/widget_text_black"
+                android:textSize="@dimen/widget_text_size" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/home_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/widget_margin_top"
+            android:contentDescription="@string/score"
+            android:gravity="center"
+            android:text="@string/test_text"
+            android:textColor="@color/blue01"
+            android:textSize="@dimen/widget_text_size" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/away_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/widget_margin_top"
+            android:contentDescription="@string/score"
+            android:gravity="center"
+            android:text="@string/test_text"
+            android:textColor="@color/blue01"
+            android:textSize="@dimen/widget_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

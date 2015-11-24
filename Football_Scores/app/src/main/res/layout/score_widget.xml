@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/abc_search_url_text_normal"
+        android:gravity="center"
+        android:padding="@dimen/widget_layout_padding"
+        android:text="FootBall Scores"
+        android:textAppearance="?android:textAppearance" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/frame">
+
+        <ListView
+            android:id="@+id/widget_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            tools:listitem="@layout/widget_scores_list_item" />
+
+        <TextView
+            android:id="@+id/widget_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty"
+            android:gravity="center"
+            android:text="@string/empty"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/primary_text_dark" />
+    </FrameLayout>
+
+</LinearLayout>
