@@ -11,11 +11,13 @@
     <dimen name="view_margin_top">20dp</dimen>
     <dimen name="view_padding_top">5dp</dimen>
     <dimen name="view_padding_bottom">5dp</dimen>
+    <!--Widget dimensions-->
     <dimen name="widget_layout_padding">10dp</dimen>
     <dimen name="widget_view_padding">6dp</dimen>
     <dimen name="widget_image_size">32dp</dimen>
     <dimen name="widget_text_size">15sp</dimen>
     <dimen name="widget_margin_top">5dp</dimen>
+    
     <dimen name="list_view_divider">15sp</dimen>
     <dimen name="fragment_about_text_size">12sp</dimen>
     <dimen name="button_padding">120dp</dimen>
